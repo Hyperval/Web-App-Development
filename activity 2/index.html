@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IPL 2026 Ticket Booking</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation bar -->
+  <header>
+    <nav>
+      <a href="#matches">Matches</a>
+      <a href="#booking">Book Ticket</a>
+      <a href="#mybookings">My Bookings</a>
+      <a href="#guidelines">Guidelines</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Banner / Hero -->
+    <section class="hero">
+      <h1>Experience The Stadium Energy Live!</h1>
+      <button>View Schedule</button>
+      <button>Book Ticket</button>
+    </section>
+
+    <!-- About IPL 2026 -->
+    <section>
+      <h2>About IPL 2026</h2>
+      <p><strong>Popular Teams</strong></p>
+      <ul>
+        <li>CSK</li>
+        <li>MI</li>
+        <li>RCB</li>
+      </ul>
+      <p><strong>Major Venues</strong></p>
+      <ul>
+        <li>Chennai</li>
+        <li>Mumbai</li>
+        <li>Bengaluru</li>
+      </ul>
+    </section>
+
+    <!-- Match Schedule -->
+    <section id="matches">
+      <h2>Match Schedule</h2>
+
+      <label>Filter by Team:</label>
+      <select>
+        <option>All Teams</option>
+        <option>CSK</option>
+        <option>MI</option>
+        <option>RCB</option>
+      </select>
+
+      <table>
+        <tr>
+          <th>Match No</th>
+          <th>Teams</th>
+          <th>Date and Time</th>
+          <th>Venue</th>
+          <th>General</th>
+          <th>Premium</th>
+          <th>VIP</th>
+          <th>Book</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>RCB vs CSK</td>
+          <td>28 March 7:30 PM</td>
+          <td>Bengaluru</td>
+          <td>1500</td>
+          <td>3500</td>
+          <td>8000</td>
+          <td><a href="#booking"><button>Book</button></a></td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- Ticket Booking Form + Booking Summary -->
+    <section id="booking">
+      <h2>Book Ticket</h2>
+
+      <form>
+        <label>Match:</label>
+        <input type="text">
+        <br><br>
+
+        <label>Stand:</label>
+        <input type="text">
+        <br><br>
+
+        <label>Tickets:</label>
+        <input type="number" min="1" value="1">
+        <br><br>
+
+        <label>Name:</label>
+        <input type="text">
+        <br><br>
+
+        <label>Email:</label>
+        <input type="email">
+        <br><br>
+
+        <label>Phone:</label>
+        <input type="tel">
+        <br><br>
+
+        <button type="submit">Book</button>
+      </form>
+
+      <!-- Booking Summary Card -->
+      <aside class="card">
+        <h3>Booking Summary</h3>
+        <p>Match:</p>
+        <p>Stand:</p>
+        <p>Price:</p>
+        <p>Quantity:</p>
+        <p>Total:</p>
+      </aside>
+    </section>
+
+    <!-- My Bookings -->
+    <section id="mybookings">
+      <h2>My Bookings</h2>
+      <table border="1">
+        <tr>
+          <th>ID</th>
+          <th>Match</th>
+          <th>Stand</th>
+          <th>Tickets</th>
+          <th>Total</th>
+        </tr>
+      </table>
+    </section>
+
+    <!-- Guidelines -->
+    <section id="guidelines">
+      <h2>Guidelines</h2>
+      <article class="card">
+        <h3>Ticket Verification</h3>
+        <p>Show your ticket at the gate.</p>
+      </article>
+      <article class="card">
+        <h3>ID Proof Requirement</h3>
+        <p>Bring a photo ID.</p>
+      </article>
+      <article class="card">
+        <h3>Prohibited Items</h3>
+        <p>No outside food or bottles.</p>
+      </article>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>Copyright 2026</p>
+  </footer>
+
+</body>
+</html>
